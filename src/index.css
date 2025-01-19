@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900 dark:text-white;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors;
+  }
+
+  .mobile-nav-link {
+    @apply block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors;
+  }
+}
+
+/* Cherry Blossom Animation */
+.cherry-blossoms {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 50% 50%, transparent 0, transparent 10px, rgba(255, 192, 203, 0.1) 10px, transparent 12px) 0 0/24px 24px,
+    radial-gradient(circle at 0 50%, transparent 0, transparent 8px, rgba(255, 192, 203, 0.1) 8px, transparent 10px) 12px 0/24px 24px;
+  animation: cherry-fall 20s linear infinite;
+}
+
+@keyframes cherry-fall {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
