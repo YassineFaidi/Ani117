@@ -63,6 +63,3 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 Enjoy exploring the world of anime with Ani117!
-```  
-
-Feel free to use this as your `README.md` file for the Ani117 project!
